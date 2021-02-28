@@ -21,7 +21,7 @@ export class Text extends React.Component {
   
     render() {
       return(
-        <p  onClick = {this.changeStyle} className = {this.state.italic === true ? 'text' : ''}> {this.props.text} </p>
+        <p  onClick = {this.changeStyle} className = {this.state.italic ? 'text' : ''}> {this.props.text} </p>
       )
     }
   }
