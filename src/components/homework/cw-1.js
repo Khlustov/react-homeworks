@@ -40,7 +40,7 @@ const Second = (props) => {
 class Check extends React.Component {
 
 state = {
-    content: true
+    content: 'X'
 }
 
 changeContent = () => {
@@ -56,9 +56,7 @@ const style = {
 
     return(
         <div>
-            {this.state.content ? 
-            <p style = {style} onClick = {this.changeContent}>X</p> : 
-            <p style = {style} onClick = {this.changeContent}>V</p>} 
+           <p style = {style} onClick = {this.changeContent}>{this.state.content ? 'V' : 'X'}</p> 
         </div>
     )
 }
@@ -75,7 +73,7 @@ state = {
 }
 
 changeValue = () => {
-    this.setState({index: this.state.index < this.state.array.length - 1 ? ++this.state.index : this.state.index = 0})
+    this.setState({index: this.state.index < this.state.array.length - 1 ? this.state.index + 1 : 0})
 }
 
 render() {
