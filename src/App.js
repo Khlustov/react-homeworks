@@ -8,8 +8,9 @@ import {SomeList, SignIn} from './components/homework/hw-2'
 function App() {
   return (
     <div>
-      <SomeList />
-      <SignIn />
+      {/* <SomeList /> */}
+      {/* <SignIn /> */}
+      <Change />
     </div>
   );
 }

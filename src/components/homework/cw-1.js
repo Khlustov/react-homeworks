@@ -67,13 +67,14 @@ const style = {
 
 class Change extends React.Component {
 
+array = ['Eat', 'Sleep', 'Rave', '🔄'];
+
 state = {
-    index: 0,
-    array: ['A', 'B', 'C']
+    index: 0,    
 }
 
 changeValue = () => {
-    this.setState({index: this.state.index < this.state.array.length - 1 ? this.state.index + 1 : 0})
+    this.setState({index: this.state.index < this.array.length - 1 ? this.state.index + 1 : 0})
 }
 
 render() {
@@ -81,7 +82,7 @@ render() {
         fontSize: 36 + 'px',
     }
     return(
-        <div style = {style} onClick = {this.changeValue}>{this.state.array[this.state.index]}</div>
+        <div style = {style} onClick = {this.changeValue}>{this.array[this.state.index]}</div>
     )
 }
 
