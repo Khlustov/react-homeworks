@@ -67,7 +67,7 @@ const style = {
 
 class Change extends React.Component {
 
-array = ['Eat', 'Sleep', 'Rave', '🔄'];
+array = ['Eat', 'Sleep', 'Rave', 'Repeat'];
 
 state = {
     index: 0,    
